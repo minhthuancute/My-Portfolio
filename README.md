@@ -1,8 +1,6 @@
 # Minh Thuan - Portfolio
 
 # Setup Template
-# 1: npm i gulp-cli
-# 2: git checkout master
-# 3: npm init
-# 4: npm i --global gulp-cli
-# 5: npm start
+# 1: npm install --global gulp-cli
+# 2: npm install
+# 3: npm start
