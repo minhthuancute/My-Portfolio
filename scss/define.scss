@@ -1,0 +1,169 @@
+@import "media";
+@import "colors";
+
+* {
+   font-family: 'Poppins', sans-serif;
+   font-family: 'Quicksand', sans-serif;
+   letter-spacing: 1px;
+}
+
+body,
+html {
+   scroll-behavior: smooth;
+
+   font-size: 62.5%;
+
+   @include xs {
+      font-size: 50%;
+   }
+}
+
+*::selection {
+   background: skyblue;
+   color: white;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+img {
+   max-width: 100%;
+   width: 100%;
+   vertical-align: middle;
+   object-fit: cover;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+
+   ul {
+      li {
+         list-style: none;
+      }
+   }
+
+   a {
+      text-decoration: none;
+      display: inline-block;
+   }
+
+   button,
+   input {
+      border: none;
+      background: none;
+      outline: none;
+   }
+}
+
+/* Define class reuseable */
+
+.middle {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.space {
+   display: flex;
+   justify-content: space-between;
+}
+
+@keyframes scrollY {
+   0% {
+      transform: translateY(15px);
+   }
+
+   100% {
+      transform: translateY(0px);
+   }
+}
+
+.title {
+   display: flex;
+   align-items: center;
+   margin-bottom: 15px;
+
+   .line {
+      margin-right: 10px;
+      width: 40px;
+      height: 1px;
+      background: rgba($color: #fff, $alpha: 0.5);
+   }
+
+   h3 {
+      color: #fff;
+      font-size: 20px;
+   }
+}
+
+.active-hamber {
+   transform: translateY(6px);
+
+   div {
+      &:nth-child(1) {
+         // transform-origin: 0 0;
+         transform: translateY(50%) rotate(45deg);
+      }
+
+      &:nth-child(2) {
+         display: none;
+      }
+
+      &:nth-child(3) {
+         // transform-origin: 0 0;
+         transform: translateY(-50%) rotate(-45deg);
+      }
+   }
+}
+
+// custom cusor
+
+.cusor {
+   position: fixed;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background: #fff;
+   transition: .1s;
+   transform: translate(-50%, -50%);
+   pointer-events: none;
+   mix-blend-mode: difference;
+
+   @include xs {
+      display: none;
+   }
+
+   @include sm {
+      display: none;
+   }
+
+   @include md {
+      display: none;
+   }
+
+   @include lg {
+      display: block;
+   }
+}
+
+@mixin paddingContent {
+   @include xs {
+      padding: 30px 20px;
+   }
+
+   @include sm {
+      padding: 30px 20px;
+   }
+
+   @include md {
+      padding: 40px 20px;
+   }
+
+   @include lg {
+      padding: 50px 30px;
+   }
+}
