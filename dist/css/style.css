@@ -269,7 +269,7 @@ img {
 
 aside .navbar {
   position: fixed;
-  z-index: 100;
+  z-index: 999999999999999;
   left: 0;
   top: 0;
   height: 100vh;
