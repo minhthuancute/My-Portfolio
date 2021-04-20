@@ -69,7 +69,6 @@ aside {
 
       width: 100%;
       background: $backgroundNavbar;
-
       border-right: 1px solid rgba($color: #fff, $alpha: 0.05);
 
       display: flex;
@@ -179,7 +178,6 @@ aside {
       }
 
       // nav
-
       .icon-down {
          position: absolute;
          left: 0;
@@ -234,6 +232,7 @@ main {
             width: 30px;
             height: 30px;
             transition: all .1s;
+            object-fit: contain; // fix size svg
 
             @for $i from 1 through 4 {
                &:nth-child(#{$i}) {
@@ -550,7 +549,7 @@ main {
 
       .item {
          padding: 20px 0;
-         border-bottom: 1px solid rgba($color: #fff, $alpha: 0.05);
+         border-bottom: 1px solid rgba($color: #fff, $alpha: 0.2);
 
          &:last-child {
             border-bottom: none;

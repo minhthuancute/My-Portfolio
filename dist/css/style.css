@@ -391,7 +391,8 @@ main {
       z-index: 1000;
       width: 30px;
       height: 30px;
-      transition: all .1s; }
+      transition: all .1s;
+      object-fit: contain; }
       main .main-landing .shapes img:nth-child(1) {
         top: 13%;
         left: 15%; }
