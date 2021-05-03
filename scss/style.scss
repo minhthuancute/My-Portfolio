@@ -63,8 +63,12 @@ aside {
          max-width: 200px;
       }
 
-      @include md {
+      @include sm {
          max-width: 220px;
+      }
+
+      @include md {
+         max-width: 240px;
       }
 
       width: 100%;

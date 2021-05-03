@@ -282,9 +282,12 @@ aside .navbar {
   @media (max-width: 576px) {
     aside .navbar {
       max-width: 200px; } }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     aside .navbar {
       max-width: 220px; } }
+  @media (min-width: 768px) {
+    aside .navbar {
+      max-width: 240px; } }
   @media (max-width: 576px) {
     aside .navbar {
       transform: translateX(-100%); } }
